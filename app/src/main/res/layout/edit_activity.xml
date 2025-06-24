@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlabel"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="label"
+        android:inputType="textAutoComplete"
+        android:required="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtprice"
+        app:layout_constraintTop_toBottomOf="@id/txtlabel"
+        android:hint="price"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdate"
+        app:layout_constraintTop_toBottomOf="@id/txtprice"
+        android:hint="date"
+        android:inputType="datetime"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnedit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtdate"
+        android:text="ADD"
+        android:textSize="@dimen/text_size"
+        style="@style/Widget.Material3.Button"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

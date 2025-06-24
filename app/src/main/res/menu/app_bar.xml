@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/menu_export"
+        android:id="@+id/menu_export"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="@string/menu_import"
+        android:id="@+id/menu_import"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="pieChart"
+        android:id="@+id/menu_pieChart"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Trier par"
+        app:showAsAction="never"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_sort_date"
+                    android:title="Date"
+                    />
+                <item
+                    android:id="@+id/menu_sort_price"
+                    android:title="Price"
+                    />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:title="@string/menu_logout"
+        android:id="@+id/logOut"
+        android:icon="@drawable/logout"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="@string/menu_search"
+        android:id="@+id/search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        />
+</menu>
